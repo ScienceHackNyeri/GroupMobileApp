@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        </title>
+        <link rel="stylesheet" href="style/jquery.mobile-1.1.1.min.css"
+        />
+        <link rel="stylesheet" href="style/my.css" />
+        
+        <script src="js/jquery-1.7.2.min.js">
+        </script>
+        <script src="js/jquery.mobile-1.1.1.min.js">
+        </script>
+        <script type="text/javascript" src="js/cordova-2.1.0.js"></script>
+        <script src="js/my.js">
+        </script>
+    </head>
+    
+    <body>
+        <!-- Index -->
+        <div id="page1" data-role="page" data-theme="b">
+            <div id="pageheader4" data-role="header" data-theme="a">
+                <h4 id="heading8">
+                    Login
+                </h4>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput1">
+                            UserName
+                        </label>
+                        <input id="textinput1" value="" type="text" placeholder="">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput2">
+                            GroupName
+                        </label>
+                        <input id="textinput2" value="" type="text" placeholder="">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput3">
+                            PassWord
+                        </label>
+                        <input id="textinput3" value="" type="password" placeholder="">
+                    </fieldset>
+                </div>
+                <a id="button13" href="#" data-role="button">
+                    Login
+                </a>
+                <a id="button14" href="#page4" data-role="button">
+                    register
+                </a>
+            </div>
+        </div>
+        <!-- DashBoard -->
+        <div id="page3" data-role="page" data-theme="b">
+            <div id="pageheader5" data-role="header" data-theme="a">
+                <a id="button4" class="ui-btn-left" href="#page1" data-role="button" data-theme="a"
+                data-iconpos="left" data-icon="arrow-l">
+                    Back
+                </a>
+                <h5 id="heading9">
+                    User Dashboard
+                </h5>
+            </div>
+            <div data-role="content">
+                <a id="button5" href="#page4" data-role="button">
+                    Admin Login
+                </a>
+            </div>
+        </div>
+        <!-- Group Admin -->
+        <div id="page4" data-role="page">
+            <div id="pageheader6" data-role="header" data-theme="a">
+                <h3 id="heading10">
+                    Admin Area
+                </h3>
+                <a id="button9" class="ui-btn-left" href="#page3" data-role="button" data-iconpos="left"
+                data-icon="arrow-l">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+                <ul id="listview3" data-role="listview" data-inset="true" data-divider-theme="b">
+                    <li role="heading" data-role="list-divider">
+                        Group Members
+                    </li>
+                    <li data-theme="c">
+                        Members
+                        <span class="ui-li-count">
+                            users online
+                        </span>
+                    </li>
+                </ul>
+                <a id="button16" href="#page5" data-role="button" data-iconpos="left"
+                data-icon="arrow-r">
+                    View Group Activity
+                </a>
+                <a id="button17" href="#page7" data-role="button" data-iconpos="left"
+                data-icon="arrow-r">
+                    View Document
+                </a>
+            </div>
+        </div>
+        <!-- Group Activity -->
+        <div id="page5" data-role="page">
+            <div id="pageheader7" data-role="header" data-theme="a">
+                <a id="button10" class="ui-btn-left" href="#page4" data-role="button"
+                data-theme="a">
+                    Back
+                </a>
+                <h3 id="heading11">
+                    Workspace
+                </h3>
+            </div>
+            <div data-role="content">
+                <h2 id="heading12">
+                    Group Name
+                </h2>
+                <a id="button7" href="#page7" data-role="button">
+                    view document
+                </a>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textarea1">
+                            user updates
+                        </label>
+                        <textarea id="textarea1" placeholder=""></textarea>
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput6">
+                            input idea
+                        </label>
+                        <input id="textinput6" value="" type="text" placeholder="">
+                    </fieldset>
+                </div>
+                <a id="button12" href="#" data-role="button">
+                    upload
+                </a>
+            </div>
+        </div>
+        <!-- register -->
+        <div id="page6" data-role="page">
+            <div id="pageheader8" data-role="header" data-theme="a" data-position="fixed">
+                <h3 id="heading6">
+                    Registration
+                </h3>
+                <a id="button18" class="ui-btn-left" href="#page1" data-role="button"
+                data-iconpos="left" data-icon="arrow-l">
+                    Back
+                </a>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput4">
+                            UserName
+                        </label>
+                        <input id="textinput4" value="" type="text" placeholder="">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput5">
+                            Unit
+                        </label>
+                        <input id="textinput5" value="" type="text" placeholder="">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput6">
+                            GroupName
+                        </label>
+                        <input id="textinput6" value="" type="text" placeholder="">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput7">
+                            Password
+                        </label>
+                        <input id="textinput7" value="" type="password" placeholder="">
+                    </fieldset>
+                </div>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput7">
+                            Verify Password
+                        </label>
+                        <input id="textinput7" value="" type="password" placeholder="">
+                    </fieldset>
+                </div>
+                <input id="submitbutton2" value="Submit" type="submit" data-theme="a">
+            </div>
+        </div>
+        <!-- document -->
+        <div id="page7" data-role="page">
+            <div id="pageheader10" data-role="header" data-theme="a">
+                <a id="button20" class="ui-btn-left" href="#page5" data-role="button"
+                data-iconpos="left" data-icon="arrow-l">
+                    Back
+                </a>
+                <a id="button21" class="ui-btn-right" href="#" data-role="button">
+                    Logout
+                </a>
+                <h3 id="heading13">
+                    Download
+                </h3>
+            </div>
+            <div data-role="content">
+                <div>
+                    <a id="link3" href="#page7" data-transition="fade">
+                        download document here
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Adminlogin -->
+        <div id="page8" data-role="page">
+            <div id="pageheader9" data-role="header" data-theme="a">
+                <h3 id="heading7">
+                    ADMIN LOGIN
+                </h3>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup">
+                        <label for="textinput13">
+                            Password
+                        </label>
+                        <input id="textinput13" value="" type="password" placeholder="">
+                    </fieldset>
+                </div>
+                <input id="submitbutton3" value="Login" type="submit" data-theme="b">
+            </div>
+        </div>
+        
+    </body>
+
+</html>

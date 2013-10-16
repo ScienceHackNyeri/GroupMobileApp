@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway xmlns="http://www.zend.com/gateway/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+   <response default="true" type="json">
+      <header name="Access-Control-Allow-Origin" value="*"/>
+      <header name="no-cache" value="true"/>
+   </response>
+   <route authenticate="true" dispatchable="RPCServices::postLoginAction" url="/login" methods="POST">
+      <parameters>
+         <parameter name="username" required="true" source="body"/>
+         <parameter name="password" required="true" source="body"/>
+      </parameters>
+   </route>
+   <route authenticate="true" dispatchable="RPCServices::getRegisterAction" url="/register" methods="GET">
+      <parameters>
+         <parameter name="username" required="true" source="body"/>
+         <parameter name="unit" required="true" source="body"/>
+         <parameter name="groupname" required="true" source="body"/>
+         <parameter name="password" required="true" source="body"/>
+      </parameters>
+   </route>
+   <route authenticate="true" dispatchable="RPCServices::getLogoutAction" url="/logout" methods="GET">
+      <parameters>
+         <parameter name="id" required="true" source="query"/>
+      </parameters>
+   </route>
+   <route authenticate="true" dispatchable="RPCServices::getUploadAction" url="/upload" methods="GET">
+      <parameters>
+         <parameter name="uploadtext" required="true" source="body"/>
+      </parameters>
+   </route>
+   <route authenticate="true" dispatchable="RPCServices::getAdmnloginAction" url="/admnlogin" methods="GET">
+      <parameters>
+         <parameter name="AdminPassword" required="true" source="body"/>
+      </parameters>
+   </route>
+</gateway>
